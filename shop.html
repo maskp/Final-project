@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif" >
+<link rel="stylesheet" href="style.css">
+	<style>
+	ul{background:green;width:97%;display:block;}
+
+	
+	li{display:inline-block;padding:10px;}
+	
+	
+	body{background:lightgray;
+		background-size:cover;
+		background-position: center;
+
+					}
+	.logo{
+		border-radius:50%;
+		height:200px;}
+
+	.logo:hover{
+		
+		transition:all 2s linear;
+		transform:rotateY(360deg);
+
+
+	}		
+			
+			
+	li{margin:10px;}
+
+
+
+	li a{text-decoration: none;
+				color:black;}
+
+	.flash{margin:0px;padding:0px;}
+			
+	ul{position:relative;}
+	.container,.cont2{position:absolute;}
+	.cont2,.container{display:none;}
+
+			
+			
+	li:hover{background:gray;}
+			.media:hover .container{display:block;}
+			.about:hover .cont2{display:block;}
+
+table,tr,td{border:1px solid black;border-collapse:collapse;}
+
+.row{display: inline-block; margin-left: 60px;border:1px solid black;padding:12px;}
+
+
+
+					}
+
+</style>
+</head>
+<body>
+
+
+<center>
+<img class="logo" src="http://defconnations.com/uploads/monthly_2016_07/618isgvnFCL._SY355_.jpg.26504b79608e8d718311725a7626e4f5.jpg">
+	</center>
+			
+			<ul>	
+				<li><a href="home.html">Home</a></li>
+				<li class="about">
+					<a href="aboutus.html" >About us</a>
+					<div class="cont2">
+						<ul class="flash">
+							
+						<li><a href="history.html">History</a></li>
+						
+						
+
+						</ul>
+					</div>
+				</li>
+				<li><a href="members.html">Members</a></li>
+				<li class="media">
+					<a href="media.html">Media Center</a>
+					<div class="container">
+						<ul class="flash"><li><a href="videos.html">Videos</a></li>
+						
+						<li><a href="discography.html">Discography</a></li>
+						
+						</ul>
+					</div>
+				</li>
+				
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="shop.html">Shop</a></li>
+
+				<li style="float:right;"><a href="login.html">login/Sign up</a></li>
+			</ul>
+			<br>
+			<br>
+
+<div>
+<div style="width:100%;">
+
+	<div class="row">
+		<img src="http://www.rock.com/assets/products/270337/large/foo-fighters-lightning-bolt-men-s-t-shirt-ff152.jpg" style="height:100px;width:100px">
+		<p>T-shirt</p>
+		<p>Price: $10</p>
+		<button id="item1">Add to cart</button>
+		
+		</div>
+
+	<div class="row">
+		<img src="http://maskai.com/media/catalog/product/cache/1/thumbnail/600x600/9df78eab33525d08d6e5fb8d27136e95/f/o/foo_fighters_ff_logo_on_front_pullover_hoodie6.jpg" style="height:100px;width:100px;">
+		<p>Hoodie</p>
+		<p>price: $15</p>
+		<button id="item2">Add to cart</button>
+	</div>
+
+	<div class="row">
+		<img src="https://ih1.redbubble.net/image.110876258.0414/sticker,220x200-pad,220x200,ffffff.jpg" style="height:100px;width:100px;">
+		<p>Stickers</p>
+		<p>price: $2</p>
+		<button id="item3">Add to cart</button>
+	</div>
+
+	<div class="row">
+		<img src="http://gearpipe.com/i/FenderFooGuitars.jpg" style="height:100px;width:100px;	">
+		<p>Guitars</p>
+		<p>price: $200</p>
+		<button id="item4">Add to cart</button>
+	</div>
+
+	<div class="row">
+		<img src="http://cdn.scahw.com.au/cdn-1cfb1d7484d1550/imagevaultfiles/id_303258/cf_3/fooies_8.jpg" style="height:100px;width:100px;">
+		<p>sonic highway
+		<p>price: $15</p>
+		<button id="item5">Add to cart</button>
+	</div>
+
+	<div class="row">
+		<img src="http://www.musiclipse.com/wp-content/uploads/2014/03/Foo-Fighters-Wasting-Light-Album-Cover.jpg" style="height:100px;width:100px;">
+		<p>Wasting Light</p>
+		<p>price: $21</p>
+		<button id="item6">Add to cart</button>
+	</div>
+</div>
+<div>
+	
+
+	</div>
+</div>
+
+
+<div style="width:100%;height:500px;margin-top:20px;background:red;" id="newlist" >Cart</div>
+	<ul class="arr">
+	</ul>
+<div ></div>
+	<button id="clear">Clear Cart</button>	
+
+
+<script>
+	$(function(){
+
+		$("#item1").click(function(){
+			$("#newlist").append("<li style='display:block;'>T-shirt 10.00</li>");
+			$(".arr").append("<li>10.00</li>");
+		});
+		$("#item2").click(function(){
+			$("#newlist").append("<li style='display:block;'>Hoodie 15.00</li>");
+			$(".arr").append("<li>15.00</li>");
+
+		});
+		$("#item3").click(function(){
+			$("#newlist").append("<li style='display:block;'>Stickers 2.00</li>");
+			$(".arr").append("<li>2.00</li>");
+		});
+		$("#item4").click(function(){
+			$("#newlist").append("<li style='display:block;'>Guitar 200.00</li>");
+			$(".arr").append("<li>200.00</li>");
+		});
+		$("#item5").click(function(){
+			$("#newlist").append("<li style='display:block;'>Album 15.00</li>");
+			$(".arr").append("<li>15.00</li>");
+		});
+		$("#item6").click(function(){
+			$("#newlist").append("<li style='display:block;'>Album 21.00</li>");
+			$(".arr").append("<li>21.00</li>");
+		})
+		$("#clear").click(function(){
+			$("#newlist").empty();
+			$(".arr").empty();
+
+		});
+
+
+	});
+
+	</script>
+<script>
+	
+	function getoOut{
+
+	}
+	
+	
+
+
+</script>
+
+</body>
+</html>

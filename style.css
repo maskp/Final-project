@@ -1,0 +1,91 @@
+
+	.mySlides {display:none}
+	ul{background:green	;width:97%;display:block;}
+
+	
+	li{display:inline-block;padding:10px;}
+	
+	
+	
+	.logo{
+		border-radius:50%;
+		height:200px;}
+
+	.logo:hover{
+		
+		transition:all 2s linear;
+		transform:rotateY(360deg);
+
+
+	}	
+
+			
+			
+	li{margin:10px;}
+
+
+
+	li a{text-decoration: none;
+				color:black;}
+
+	.flash{margin:0px;padding:0px;}
+			
+	ul{position:relative;}
+	.container,.cont2{position:absolute;}
+	.cont2,.container{display:none;}
+
+			
+			
+	li:hover{background:gray;}
+			.media:hover .container{display:block;z-index:1;}
+			.about:hover .cont2{display:block;z-index:1;}
+
+
+	ul{position:relative;}
+	.container,.cont2{position:absolute;}
+	.cont2,.container{display:none;}
+
+			
+			
+	li:hover{background:gray;}
+			.media:hover .container{display:block;}
+			.about:hover .cont2{display:block;}
+
+table,tr,td{border:1px solid black;border-collapse:collapse;}
+
+.row{display: inline-block; margin-left: 60px;border:1px solid black;padding:12px;}
+div .row:hover{width:120px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+body{background:url('https://images.alphacoders.com/291/291541.jpg');
+		
+		background-position: center;
+}
+
+
+li a{text-decoration: none;
+				color:black;
+				font-family: 'Noto Serif', serif;
+			}

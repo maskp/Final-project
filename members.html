@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif" >
+
+	<style>
+	
+	ul{background:green	;width:97%;display:block;}
+
+	
+	li{display:inline-block;padding:10px;}
+	
+	
+	body{background:url('https://images.alphacoders.com/291/291541.jpg');
+		
+		background-position: center;background-repeat:none;background-size:cover;
+	}
+	.logo{
+		border-radius:50%;
+		height:200px;}
+
+	.logo:hover{
+		
+		transition:all 2s linear;
+		transform:rotateY(360deg);}	
+
+
+			
+			
+	li{margin:10px;}
+
+
+
+	li a{text-decoration: none;
+				color:black;}
+
+	.flash{margin:0px;padding:0px;}
+			
+	ul{position:relative;}
+	.container,.cont2{position:absolute;}
+	.cont2,.container{display:none;}
+
+			
+			
+			li:hover{background:gray;}
+			.media:hover .container{display:block;z-index:1;}
+			.about:hover .cont2{display:block;z-index:1;}	
+
+			
+.hw{
+	height:700px;
+	width:300px;
+	float:left;
+	display:inline-block;
+	margin:20px;
+	
+	backface-visibility: hidden;
+
+
+}
+.hw > .front{
+	position:absolute;
+	-webkit-transform:perspective(600px) rotateY(0deg);
+	-webkit-transition:transform .5s linear 0s; 
+	-webkit-backface-visibility: hidden;
+
+	transform:perspective(600px) rotateY(0deg);
+	transition:transform .5s linear 0s; 
+	-webkit-backface-visibility:hidden;
+	width:300px;
+	height:700px;
+
+	
+	text-align:center;
+	font-size:20px;
+
+}
+.hw >.back{
+	position:absolute;
+	background-color:white;
+	padding:3px;
+	-webkit-transform:perspective(600px) rotateY(180deg);
+	-webkit-transition:transform .5s linear 0s;
+	-webkit-backface-visibility: hidden;
+	transform:perspective(600px) rotateY(180deg);
+	transition:transform .5s linear 0s;
+	backface-visibility: hidden;
+	
+	width:300px;
+	height:700px;
+
+}
+
+.hw:hover>.front {
+	transform:perspective(600px) rotateY(-180deg);
+	
+}
+.hw:hover>.back{
+	transform:perspective(600px) rotateY(0deg);
+	
+}
+.hw .front img{
+	height:700px;
+	width:300px;
+}
+.hw .back img{
+	height:700px;
+	width:300px;
+
+}
+
+
+.back a{font-size:30px;
+		text-decoration: none;
+		margin:0 auto;
+		}
+
+.front a{font-size:30px;
+		text-decoration: none;
+		margin:0 auto;
+		}
+
+h1,p{font-family:cursive;}
+
+li a{text-decoration: none;
+				color:black;
+				font-family: 'Noto Serif', serif;
+
+			}
+
+
+	
+
+
+
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+<center>
+<img class="logo" src="http://defconnations.com/uploads/monthly_2016_07/618isgvnFCL._SY355_.jpg.26504b79608e8d718311725a7626e4f5.jpg">
+	</center>
+			
+			<ul>	
+				<li><a href="home.html">Home</a></li>
+				<li class="about">
+					<a href="aboutus.html" >About us</a>
+					<div class="cont2">
+						<ul class="flash">
+							
+						<li><a href="history.html">History</a></li>
+						
+						
+
+						</ul>
+					</div>
+					<li><a href="members.html">Members</a></li>
+				</li>
+				<li class="media">
+					<a href="media.html">Media Center</a>
+					<div class="container">
+						<ul class="flash"><li><a href="videos.html">Videos</a></li>
+						
+						<li><a href="discography.html">Discography</a></li>
+		
+						</ul>
+					</div>
+				</li>
+				
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="shop.html">Shop</a></li>
+
+				<li style="float:right;"><a href="login.html">login/Sign up</a></li>
+			</ul>
+			<br>
+			<br>
+			
+
+		
+		
+		<div class="hw">
+			<div class="back"><a href="#"><p>Dave Grohl:</a><p>David Eric "Dave" Grohl (born January 14, 1969)[6][7] is an American rock musician, multi-instrumentalist, singer, songwriter, director and producer. He is best known as the former drummer for the grunge band Nirvana and the founder and frontman of the rock band Foo Fighters, of which he is the lead singer, one of three guitarists, and primary songwriter.</p></div>
+			<div class="front"><a href="#"><img src="http://orig15.deviantart.net/9641/f/2008/028/4/3/dave_grohl_by_al3va.jpg"></a></div>
+		</div>
+		<div class="hw">
+			<div class="back"><a href="#">Nate Mendel</a><p>Nathan Gregor "Nate" Mendel (born December 2, 1968) is an American bassist for the bands Foo Fighters, The Jealous Sound, Sunny Day Real Estate, and The Fire Theft. In 2015, he announced he is the singer, songwriter, and guitarist for his new project, Lieutenant.</p></div>
+			<div class="front"><a href="aboutme.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Nate_Mendel_2009.jpg/170px-Nate_Mendel_2009.jpg" ></a></div>
+		</div>
+		<div class="hw">
+			<div class="back"><a href="#">Taylor Hawkins</a><p>Oliver Taylor Hawkins (born February 17, 1972) is an American musician, best known as the drummer of the rock band Foo Fighters. Prior to joining the band in 1997, he was the touring drummer for Alanis Morissette on her Jagged Little Pill and Can't Not Tour, as well as the drummer in a progressive experimental band called Sylvia.</p></div>
+			<div class="front"><a href="#"><img src="https://s-media-cache-ak0.pinimg.com/236x/36/65/c3/3665c3c9e7849b27257f13d757e36b5f.jpg"></a></div>
+		</div>
+		<div class="hw">
+			<div class="back"><a href="#">Chris Shiflett</a><p>Christopher Aubrey "Chris" Shiflett (born May 6, 1971) is best known as the lead guitarist for the rock band Foo Fighters since June 1999, and the punk rock band No Use for a Name, as well as the punk rock cover band Me First and the Gimme Gimmes. He is the younger brother of musician Scott Shiflett.</p></div>
+			<div class="front"><a href="resume.html"><img src="https://s-media-cache-ak0.pinimg.com/236x/ba/57/9d/ba579da12f344674e212181b45e2115d.jpg"></a></div>
+		</div></div>
+		<br><br><br>	
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<center><h1>connect with us</h1>
+	
+			<a href="https://www.facebook.com/foofighters"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" style="border-radius:50%;width:40px;height:40px;"></a>
+			<a href="https://twitter.com/foofighters"><img src="http://resources.css.edu/campusrec/images/logos/twitterlogo.jpg" style="border-radius:50%;width:40px;height:40px;" ></a>
+			<a href="https://www.instagram.com/foofighters/" ><img src="http://rs936.pbsrc.com/albums/ad203/natasyao/Logo/images3_zpsb0c09c4f.jpg~c200" style="border-radius:50%;width:40px;height:40px;"></a>
+	</center>
+
+
+		
+
+
+
+</body>
+</html>

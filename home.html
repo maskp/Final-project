@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+
+	<style>
+	.mySlides {display:none}
+	.mySlides img{width:100%;height:600px;}
+	ul{background:green	;width:97%;display:block;}
+
+	
+	li{display:inline-block;padding:10px;}
+	
+	
+	body{background:url('https://images.alphacoders.com/291/291541.jpg');
+		
+		background-position: center;
+
+					}
+	.logo{
+		border-radius:50%;
+		height:200px;}
+
+	.logo:hover{
+		
+		transition:all 2s linear;
+		transform:rotateY(360deg);
+
+
+	}		
+			
+			
+	li{margin:10px;}
+
+
+
+	li a{text-decoration: none;
+				color:black;
+				font-family: 'Noto Serif', serif;
+			}
+
+	.flash{margin:0px;padding:0px;}
+			
+	ul{position:relative;}
+	.container,.cont2{position:absolute;}
+	.cont2,.container{display:none;}
+
+	
+
+			
+			
+	li:hover{background:gray;}
+			.media:hover .container{display:block;z-index:1;}
+			.about:hover .cont2{display:block;z-index:1;}
+
+table,tr,td{border:1px solid black;border-collapse:collapse;}
+
+.row{display: inline-block; margin-left: 60px;border:1px solid black;padding:12px;}
+div .row:hover{width:120px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+#rightbtn{
+position:absolute;
+top:30%;
+right:0;
+
+opacity:.6;
+text-decoration:none;
+font-size:30px;
+color:white;
+}
+
+#leftbtn{
+	position:absolute;
+	top:30%;
+	left:0;
+	
+	opacity:.6;
+	text-decoration:none;
+	font-size:30px;
+	color:white;
+
+}
+
+#rightbtn:hover{opacity:1;}
+#leftbtn:hover{opacity:1;}
+
+
+
+</style>
+</head>
+<body>
+
+
+<center>
+<img class="logo" src="http://defconnations.com/uploads/monthly_2016_07/618isgvnFCL._SY355_.jpg.26504b79608e8d718311725a7626e4f5.jpg">
+	</center>
+			
+			<ul>	
+				<li><a href="home.html">Home</a></li>
+				
+				<li class="about">
+					<a href="aboutus.html" >About us</a>
+
+					<div class="cont2">
+						<ul class="flash">
+							
+						<li><a href="history.html">History</a></li>
+						
+						
+
+						</ul>
+					</div>
+				</li>
+				<li><a href="members.html">Members</a></li>
+				<li class="media">
+					<a href="media.html">Media Center</a>
+					<div class="container">
+						<ul class="flash"><li><a href="videos.html">Videos</a></li>
+						
+						<li><a href="discography.html">Discography</a></li>
+						
+						</ul>
+					</div>
+				</li>
+				
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="shop.html">Shop</a></li>
+
+				<li style="float:right;"><a href="login.html">login/Sign up</a></li>
+			</ul>
+			<br>
+			<br>
+			<div class="slideshow-container">
+				
+				<div class="mySlides fade">
+					<img src="https://i.ytimg.com/vi/XjBUBFKb5zY/maxresdefault.jpg" >
+				</div>
+
+				<div class="mySlides fade">
+				<img src="http://i.onionstatic.com/avclub/5632/26/16x9/960.jpg" >
+				</div>	
+
+				<div class="mySlides fade">
+				<img src="https://www.morrisonhotelgallery.com/images/medium/01-foo-fighters-quebec-city-rain-2015-2-by-dustin-rabin-25-2700.jpg" >
+				</div>
+
+			
+
+			
+			<a href="#" onclick="plusDivs(-1)" id="leftbtn"><</a>
+			<a href="#" onclick="plusDivs(+1)" id="rightbtn">></a>
+
+			</div>
+
+			
+	
+		<footer style="margin:0 auto">
+				<center><div id="div99">
+					<h2 style="font-family:cursive;">Buy it on <a href="https://www.amazon.com/Saint-Cecilia-EP-Foo-Fighters/dp/B0186SDOP0/ref=sr_1_1?ie=UTF8&qid=1475651401&sr=8-1&keywords=foo+fighter"><br><img src="http://www.turnerduckworth.com/media/filer_public/86/18/86187bcc-752a-46f4-94d8-0ce54b98cd46/td-amazon-smile-logo-01-large.jpg" style="width:40px;height:40px;border-radius:50%;margin-top:10px;"></a>&nbsp<a href=""><img src="https://support.apple.com/content/dam/edam/applecare/images/en_US/itunes/featured-contetn-itunes-icon_2x.jpg" style="width:40px;height:40px;border-radius:50%;margin-top:10px;""></h2>
+				</div></center>
+				<div><h6>Copyright:foo fighters</h6></div>
+
+		
+
+
+			
+		</footer>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(increment) {
+  showDivs(slideIndex += increment);
+}
+
+function showDivs(increment) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (increment > x.length) {slideIndex = 1}    
+  if (increment < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>

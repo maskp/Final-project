@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Serif" >
+<link rel="stylesheet" href="style.css">	
+	<style>
+	.mySlides {display:none}
+	ul{background:green	;width:98%;display:block;}
+
+	
+	li{display:inline-block;padding:10px;}
+	
+	
+	
+	.logo{
+		border-radius:50%;
+		height:200px;}
+
+	.logo:hover{
+		
+		transition:all 2s linear;
+		transform:rotateY(360deg);
+
+
+	}		
+			
+			
+	li{margin:10px;}
+
+
+
+	li a{text-decoration: none;
+				color:black;}
+
+	.flash{margin:0px;padding:0px;}
+			
+	ul{position:relative;}
+	.container,.cont2{position:absolute;z-index:1;}
+	.cont2,.container{display:none;z-index:1;}
+
+			
+			
+	li:hover{background:gray;}
+			.media:hover .container{display:block;}
+			.about:hover .cont2{display:block;}
+
+table,tr,td{border:1px solid black;border-collapse:collapse;}
+
+.row{display: inline-block; margin-left: 60px;border:1px solid black;padding:12px;}
+div .row:hover{width:120px;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+body{background:url('https://images.alphacoders.com/291/291541.jpg');
+		
+		background-position: center;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<center>
+<img class="logo" src="http://defconnations.com/uploads/monthly_2016_07/618isgvnFCL._SY355_.jpg.26504b79608e8d718311725a7626e4f5.jpg">
+	</center>
+			
+			<ul>	
+				<li><a href="home.html">Home</a></li>
+				<li class="about">
+					<a href="aboutus.html" >About us</a>
+					<div class="cont2">
+						<ul class="flash">
+							
+						<li><a href="history.html">History</a></li>
+						
+						
+
+						</ul>
+					</div>
+				</li>
+				<li><a href="members.html">Members</a></li>
+				<li class="media">
+					<a href="#">Media Center</a>
+					<div class="container">
+						<ul class="flash"><li><a href="videos.html">Videos</a></li>
+												<li><a href="discography.html">Discography</a></li>
+						
+						</ul>
+					</div>
+				</li>
+				
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="shop.html">Shop</a></li>
+
+				<li style="float:right;"><a href="login.html">login/Sign up</a></li>
+			</ul>
+
+			<br>
+
+		
+			<CENTER>
+			<div style="background:gray; width:50%">
+
+			<a href="mailto:someone@example.com">Send Email</a>
+
+			<h3>or submit a form</h3>
+			<form action="#" method="post">
+				Name:<br>
+				<input type="text" required><br><br/>
+				email:<br>
+				<input type="email" required><br/><br>
+				Comment:<br>
+				<input type="text" style="width:500px;height:500px;" required><br><br>
+				<input id="sub" type="submit" value="submit"/>
+
+
+
+
+
+			</form>
+			</div>>
+			</CENTER>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+	<head>
+
+		<title>background</title>
+		<style type="text/css">
+
+<
+	ul{background:green	;width:100%;display:block;}
+
+	
+	li{display:inline-block;padding:10px;}
+	
+	
+	body{background:#eee;
+		background-size:cover;
+		background-position: center;
+
+					}
+	.logo{
+		border-radius:50%;
+		height:200px;}
+
+	.logo:hover{
+		
+		transition:all 2s ease;
+		transform:rotateZ(360deg);
+}		
+			
+			
+	li{margin:10px;}
+
+
+
+	li a{text-decoration: none;
+				color:black;}
+
+	.flash{margin:0px;padding:0px;}
+			
+	ul{position:relative;}
+	.container,.cont2{position:absolute;}
+	.cont2,.container{display:none;}
+
+			
+			
+	li:hover{background:gray;}
+			.media:hover .container{display:block;}
+			.about:hover .cont2{display:block;}
+
+#playlist{list-style:none;background:#aaa;}
+
+#playlist li a{color:black;text-decoration:none;}
+
+#playlist .current-song a{
+	color:blue;
+}
+
+#playlist li{
+	display:block;
+	background:gray;
+	font-size:20px;
+}
+
+#playlist a:active{
+	color:orange;
+}
+
+.img img{
+	width:100%;
+	height:400px;
+}
+
+.bgvideo	{position:fixed;
+						top:0;
+						left:0;
+						min-width:100%;
+						min-height:100%;
+						width:auto;
+						height:auto;
+						z-index:-1;
+
+					}
+
+#list-cont{background:lightgray;}
+
+</style>
+</head>
+<body>
+	<img class="logo" src="http://defconnations.com/uploads/monthly_2016_07/618isgvnFCL._SY355_.jpg.26504b79608e8d718311725a7626e4f5.jpg">
+	
+
+	
+
+			<video autoplay loop muted="true" class="bgvideo" id="bgvideo">
+				<source src="best.mp4" type="video/mp4">
+
+			</video>
+			<a href="home.html" style="color:black;font-size:20px;font-family:15px;">Enter Site</a>
+			<div style="float:right;">
+			
+			<button onclick="unmute()" style="width:60px;">&#128266;</button>
+			
+			</div>
+
+			
+		
+		<script>
+		
+		function unmute(){
+			var g= document.getElementById("bgvideo");
+			g.muted= !g.muted;
+		}
+		
+		</script>
+	</body>
